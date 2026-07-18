@@ -1,32 +1,82 @@
-h1 {
-    text-align: center;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
-    margin-top: 100px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
 }
 
 label {
-    font-size: 26px;
-    font-weight: bold;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 input {
-    font-size: 17px;
-    width: 200px;
-    height: 40px;
+  font-size: 17px;
+  width: 200px;
+  height: 40px;
+  border: 3px solid black;
+  padding: 5px;
 }
 
 button {
-    height: 40px;
-    width: 90px;
-    font-size: 18px;
-    border-radius: 8px;
-    background-color: aquamarine;
-    font-weight: 600;
+  border: 2px solid black;
+  height: 50px;
+  width: 100px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: aquamarine;
+  font-weight: 600;
+  padding: 5px;
+}
+button:hover {
+  background-color: rgb(60, 255, 190);
+}
+
+.invalid {
+  border-color: red;
+  background-color: pink;
+}
+
+.error {
+  margin: 0;
+  font-weight: bold;
+  color: rgb(175, 34, 34);
+  font-size: 17px;
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+  height: 250px;
+  width: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.808);
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgb(0, 0, 0);
+}
+
+.content {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tempButton {
+  width: 200px;
 }
