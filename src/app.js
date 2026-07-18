@@ -110,7 +110,7 @@ async function loadGify(temp, humidity) {
     if (temp < 20 && humidity < 60) {
         gif = await fetch('https://api.giphy.com/v1/gifs/translate?api_key=xqB4VhENB4V5LY2po0h18K1KANTvyU5N&s=clear sky');
     } else if (temp < 20 && humidity >= 60) {
-        gif = await fetch('https://api.giphy.com/v1/gifs/translate?api_key=xqB4VhENB4V5LY2po0h18K1KANTvyU5N&s=rainsnow');
+        gif = await fetch('https://api.giphy.com/v1/gifs/translate?api_key=xqB4VhENB4V5LY2po0h18K1KANTvyU5N&s=snow rain');
     } else if (temp > 20 && humidity < 60) {
         gif = await fetch('https://api.giphy.com/v1/gifs/translate?api_key=xqB4VhENB4V5LY2po0h18K1KANTvyU5N&s=burning hot');
     } else if (temp > 20 && humidity >= 60) {
